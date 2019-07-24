@@ -1,6 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2c3e50</color>
-    <color name="colorPrimaryDark">#1B3147</color>
-    <color name="colorAccent">#3498db</color>
+ <color name="colorPrimary">#efece1</color>
+    <color name="colorPrimaryDark">#42413e</color>
+    <color name="colorAccent">#e9FeFF</color>
+    <color name="colorBlueJeans">#0489FF</color>
+    <color name="colorEarthOrange">#E2783E</color>
+    <color name="colorAverageBeige">#D1CCB3</color>
+    <color name="colorCharcoal">#7884A5</color>
+    <color name="colorDarkJeans">#2657a5</color>
+    <color name="colorEarthYellow">#f9b41e</color>
+    <color name="colorAverageBlue">#B8DECE</color>
+    <color name="colorWhite">#FDFEFE</color>
+    <color name="colorPinkOrange">#F39569</color>
+    <color name="colorLightPink">#E7B69C</color>
+    <color name="colorBrightOrange">#F64F12</color>
+    <color name="colorMediumGreen">#108A72</color>
+    <color name="colorDarkNavy">#12104B</color>
+    <color name="colorLightGreen">#7AC7B8</color>
+    <color name="colorBlueGreen">#5A8799</color>
+    <color name="lightNavy">#20c5d7</color>
+    <color name="darkGreen">#86a578</color>
+    <color name="colorLightOrange">#e85029</color>
+   
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="clay">#f78833</color>
+    <color name="green">#419154</color>
+    <color name="forest">#2d7e87</color>
+    <color name="red">#fb0f0e</color>
+    <color name="gold">#f8d22e</color>
+    <color name="silver">#b9c3c9</color>
+    <color name="bronze">#f89a10</color>
+    <color name="navy">#283152</color>
 </resources>

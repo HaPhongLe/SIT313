@@ -15,6 +15,16 @@ namespace Project1
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+
+
+            EditText textInput = FindViewById<EditText>(Resource.Id.editText);
+            Button checkButton = FindViewById<Button>(Resource.Id.check);
+            Button resetButton = FindViewById<Button>(Resource.Id.reset);
+            Button hintButton = FindViewById<Button>(Resource.Id.hint);
+            Button result = FindViewById<Button>(Resource.Id.result);
+            TextView hint = FindViewById<TextView>(Resource.Id.hint);
+            TextView shuffedLetters = FindViewById<TextView>(Resource.Id.shuffledLetters);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
