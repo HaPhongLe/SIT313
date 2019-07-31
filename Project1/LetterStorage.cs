@@ -4,7 +4,7 @@ namespace Project1
     public class LetterStorage
     {
             public static Random RANDOM = new Random();
-        public static String[] WORDSLEVEL1 = {"ACT", "AGE", "ACE", "ADD", "BAD", "BAR", "BED", "BIN", "CAR", "CAT","DIE", "DIG", "DOG", "DRY", "EGO", "FAR", "HER", "HIM", "HUB",
+        public static string[] WORDSLEVEL1 = {"ACT", "AGE", "ACE", "ADD", "BAD", "BAR", "BED", "BIN", "CAR", "CAT","DIE", "DIG", "DOG", "DRY", "EGO", "FAR", "HER", "HIM", "HUB",
     "LAY", "LOW", "LIE", "MAD", "MAP", "ODD", "OFF", "PAD", "PAY", "PET", "PIG", "PEN", "PUT", "RED", "SAD", "SIN", "SIT", "SAY", "SEE", "WAX", "WIN", "YOU", "JAZZ", "FUZZ", "BUZZ", "QUIZ", "JACK", "JUMP", "JUNK", "COZY", "JOKE", "JOWL", "JIVE", "QUIP", "BOXY", "DOZY", "FLUX", "JAWS", "JEEP",
     "JOBS", "JUGS", "LAZY", "MAZE", "JURY", "QUAY", "BUCK", "FAUX", "JAGS", "YELL", "KICK", "LYNX", "QUID", "QUIN", "AQUA", "BECK", "BACK", "BUFF", "BUMP", "CUFF", "DOSE", "DOZE",
     "EXAM", "EXPO", "JAIL", "JEAN", "JOIN", "JOLT", "MOCK", "PACK", "PICK", "PUFF", "PUMP", "QUIT", "VAMP", "BOMB", "BULK", "CAMP", "CLUB", "COMB", "DUCK", "HACK", "HAWK", "HOAX",
@@ -13,7 +13,7 @@ namespace Project1
     "MAKE","MARK", "MASK", "PEAK", "PLUG", "PORK", "PUBS", "ROCK", "RACK", "SICK", "SKIP", "SOCK", "WEAK", "WEEK", "WOLF", "ROSE", "BODY", "BUSH", "BUSY", "CABS", "COME", "CAME",
     "CRAB", "CRAP", "CREW", "CROP", "EGGS", "FACE", "FACT", "FAME", "FLAG", "FORM", "FUND", "FURY", "GIVE", "GEEK", "GLOW", "GUMS", "HIGH", "HIVE", "HIKE", "HOOK", "MANY", "MICE"};
 
-        public static String[] WORDSLEVEL2 = {"JAZZY", "FUZZY", "MUZZY", "FIZZY", "DIZZY", "PIZZA", "QUICK", "ZAPPY", "ZIPPY", "JACKS", "JUMPS", "JERKY", "JUICY", "CRAZY", "FIELD",
+        public static string[] WORDSLEVEL2 = {"JAZZY", "FUZZY", "MUZZY", "FIZZY", "DIZZY", "PIZZA", "QUICK", "ZAPPY", "ZIPPY", "JACKS", "JUMPS", "JERKY", "JUICY", "CRAZY", "FIELD",
     "BLAZE", "CHUCK", "JAPAN", "JELLY", "JERKS", "JOKER", "JOKES", "JUDGE", "JUICE", "CHECK", "CHICK", "ENJOY", "EJECT", "FROZE", "JEEPS", "JOLTY", "MAJOR", "MAZES", "PICKY", "PUPPY",
     "QUERY", "QUILL", "UNBOX", "WACKY", "ZEBRA", "BLOCK", "BLACK", "BOXED", "BUCKS", "CHAMP", "CHIMP", "CHEVY", "CHUNK", "CLICK", "CLOCK", "CLUMP", "COMFY", "DOZEN", "DUCK", "EQUAL",
     "HUBBY", "INBOX", "JELLS", "KICKS", "LUCKY", "MIXED", "MOMMY", "POPPY", "QUEEN", "QUILT", "SQUAD", "SQUID", "YUMMY", "BOXER", "BOXES", "BRICK", "CHALK", "CHEWY", "CLIMB", "CRACK",
@@ -41,7 +41,7 @@ namespace Project1
       return a String contains pseudorandom word from WORDLEVEL1 array
 
       */
-        public static String randomWordLevel1() { return WORDSLEVEL1[RANDOM.Next(WORDSLEVEL1.Length)]; }
+        public string randomWordLevel1() { return WORDSLEVEL1[RANDOM.Next(WORDSLEVEL1.Length)]; }
 
 
         /**
@@ -53,7 +53,7 @@ namespace Project1
          return a String contains pseudorandom word from WORDLEVEL2 array
 
          */
-        public static String randomWordLevel2() { return WORDSLEVEL2[RANDOM.Next(WORDSLEVEL2.Length)]; }
+        public string randomWordLevel2() { return WORDSLEVEL2[RANDOM.Next(WORDSLEVEL2.Length)]; }
 
         /**
  shuffleWord:
@@ -69,7 +69,7 @@ namespace Project1
  then, shuffling the word
 
  */
-        public static String shuffleWord(String word)
+        public string shuffleWord(String word)
         {
             if (word != null && !"".Equals(word))
             {
@@ -98,7 +98,7 @@ namespace Project1
 
          returns a boolean value indicating if two given words are match
          */
-        public static Boolean compareWords(String word1, String word2)
+        public bool compareWords(String word1, String word2)
         {
             word1 = word1.ToLower();
             word2 = word2.ToLower();
