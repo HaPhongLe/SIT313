@@ -1,4 +1,10 @@
 ﻿using System;
+using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
+using Android.Runtime;
+using Android.Widget;
+using Android.Content;
 namespace Project1
 {
     public class LetterStorage
@@ -120,6 +126,28 @@ namespace Project1
 
             }
             return match;
+        }
+
+        public void giveHint(string givenWord,TextView hint, int coin)
+        {
+            if(coin<=0)
+            {
+                return;
+            }
+            string hintRevealed = hint.Text.ToString();
+            char[] a = givenWord.ToCharArray();
+            char[] b = hintRevealed.ToCharArray();
+            char[] c = new char[hintRevealed.Length + 1];
+
+            if (a.Length > b.Length)
+            {
+                for(int i = 0; i < c.Length; i++ )
+                {
+                    c[i] = a[i];
+                }
+            }
+            hintRevealed = new string(c);
+            hint.Text = hintRevealed;
         }
 
     }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="10dp"
-    tools:context=".MainActivity"
+    tools:context=".Level2Activity"
     >
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right">
@@ -22,7 +22,6 @@
             android:textSize="24sp"
             android:textColor="@color/colorEarthYellow"/>
         </LinearLayout>
-
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,8 +65,6 @@
                 android:textSize="24sp" />
 
         </LinearLayout>
-
-
         //hint button
         <LinearLayout
             android:layout_width="match_parent"
@@ -159,9 +156,6 @@
         android:gravity="center_horizontal"
         android:layout_marginBottom="0dp"
         >
-    
-
-         
         <Button
             android:id="@+id/reset"
             android:layout_width="match_parent"
@@ -171,11 +165,11 @@
             android:textSize="24sp"
             android:textColor="@color/colorDarkNavy"
           
-             android:layout_marginBottom="47dp"
+            android:layout_marginBottom="47dp"
             android:text="New Game" />
 
-                <Button
-            android:id="@+id/nextLevel"
+         <Button
+            android:id="@+id/previousLevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -184,11 +178,9 @@
             android:textColor="@color/colorDarkNavy"
           
            
-            android:text="Next Level" />
+            android:text="Previous Level" />
    
-        
     </RelativeLayout>
-
 
 
 
