@@ -100,7 +100,7 @@ namespace Project1
             //if they haven't got the certain score, a message is displayed
 
             nextLevelButton.Click += delegate {
-                if(score >= 30)
+                if(score >= 200)
                 {
                     renewWord();
                     //score = 0;
